@@ -3,12 +3,6 @@ These python scripts were written and used for analysis in the creation of Max G
 
 ## Script descriptions and Utilization Instructions:
 
-### extract_exact_sequence.py
-This script was used to simulated so called "HiFi" or 0 error reads. In order to execute the script takes the path to a fastq file containing PBSIM2 simulated reads as command line input as well as the reference from which the reads were simulated. It then parses through the fastq file read by read, extracting the true exact sequence of each read from the reference genome using samtools faidx and writing these exact sequences to a new fastq file. Thus, after running this script you are left with the same reads as in the initial fastq file but with any simulated sequencing error removed. 
-
-example usage: "python {fastq file} {reference genome} >> {desired name for new exact read sequence fastq}
-
-
 
 ### extract_exact_sequence.py
 This script was used to simulated so called "HiFi" or 0 error reads. In order to execute the script takes the path to a fastq file containing PBSIM2 simulated reads as command line input as well as the reference from which the reads were simulated. It then parses through the fastq file read by read, extracting the true exact sequence of each read from the reference genome using samtools faidx and writing these exact sequences to a new fastq file. Thus, after running this script you are left with the same reads as in the initial fastq file but with any simulated sequencing error removed. 
